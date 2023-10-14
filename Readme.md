@@ -24,7 +24,7 @@ Done congrats your session saved in your saved messages.
 - [Telethon](https://github.com/LonamiWebs/Telethon) (for generating Telethon session)
 - [Pyrogram](https://pyrogram.org) (for generating Pyrogram session)
 
-### Installation(Try in anyy terminal like termux, collab co, etc.)
+### Installation(Try in any terminal like termux, collab co, etc.)
 
    ```bash
    git clone https://github.com/bcncalling/bcn_string
