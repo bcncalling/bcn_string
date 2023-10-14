@@ -16,7 +16,7 @@ async def generate_telethon_session():
     async with TelegramClient(StringSession(), api_id, api_hash) as client:
         print("Generating Telethon String Session...")
         session_string = client.session.save()
-        await client.send_message("me", f"Your string session:\n`{session_string}`")
+        await client.send_message("me", f"**Your string session:**\n\n`{session_string}`")
         print("Your Telethon string session was saved in your saved messages.")
         return session_string
 
@@ -32,7 +32,7 @@ async def generate_pyrogram_session():
     ) as app:
         print("Generating Pyrogram V2 String Session...")
         session_string = await app.export_session_string()
-        await app.send_message("me", f"Your string session:\n`{session_string}`")
+        await app.send_message("me", f"**Your string session:**\n\n`{session_string}`")
         print("Your Pyrogram string session was saved in your saved messages.")
         return session_string
 
