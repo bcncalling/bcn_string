@@ -36,7 +36,7 @@ async def generate_pyrogram_session():
         print("Your Pyrogram string session was saved in your saved messages.")
         return session_string
 
-async def init():
+async def bcn():
     print("Please Choose an Option:")
     print("1. Generate Telethon Session")
     print("2. Generate Pyrogram V2 Session")
@@ -54,4 +54,4 @@ async def init():
         print("🚫 Invalid choice. Please choose 1 or 2.")
 
 if __name__ == "__main__":
-    asyncio.run(init())
+    asyncio.run(bcn())
