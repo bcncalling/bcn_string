@@ -17,14 +17,14 @@ Done congrats your session saved in your saved messages.
 ```
 
 
-### Prerequisites
+### Credits
 
 - Python 3
 - [Black Cat Server](t.me/blackcatserver) (Code making from scratch)
 - [Telethon](https://github.com/LonamiWebs/Telethon) (for generating Telethon session)
 - [Pyrogram](https://pyrogram.org) (for generating Pyrogram session)
 
-### Installation
+### Installation(Try in anyy terminal like termux, collab co, etc.)
 
    ```bash
    git clone https://github.com/bcncalling/bcn_string
