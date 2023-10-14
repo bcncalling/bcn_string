@@ -4,9 +4,12 @@ from pyrogram import Client
 from telethon.sync import TelegramClient
 from telethon.sessions import StringSession
 
+API_ID = 24414252 #PUT YOUR OWN API
+API_HASH = "247bc633310a5ce3dc8534c0d496197f" #PUT YOUR API HASH
+
 async def generate_telethon_session():
-    api_id = 24414252
-    api_hash = "247bc633310a5ce3dc8534c0d496197f"
+    api_id = API_ID
+    api_hash = API_HASH
 
     async with TelegramClient(StringSession(), api_id, api_hash) as client:
         print("Generating Telethon String Session...")
@@ -17,8 +20,8 @@ async def generate_telethon_session():
 
 async def generate_pyrogram_session():
     name = "BCN"
-    api_id = 24414252
-    api_hash = "247bc633310a5ce3dc8534c0d496197f"
+    api_id = API_ID
+    api_hash = API_HASH
 
     async with Client(
         name,
