@@ -1,3 +1,5 @@
+## Credits to @blackcatserver github: https://github.com/bcncalling
+
 import os
 import asyncio
 from pyrogram import Client
