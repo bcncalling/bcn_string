@@ -9,7 +9,8 @@ Follow these instructions to set up and use the session generator.</br>
 Please Choose an Option:
 1. Generate Telethon Session
 2. Generate Pyrogram V2 Session
-Enter your choice (1/2):
+3. Generate Hydrogram Session
+Enter your choice (1/2/3):
 2.Enter Your phone number or bot token:
 3.Enter your received otp:
 4.Enter your two steps code:(if your account have two steps ask other wise dont ask.)
