@@ -54,17 +54,17 @@ async def bcn():
     choice = input("Enter your choice (1/2/3): ")
 
     if choice == "1":
-        telethon_session = await telethon_session()
+        telethon_session_result = await telethon_session()
         with open("telethon_session.txt", "w") as file:
-            file.write(telethon_session)
+            file.write(telethon_session_result)
     elif choice == "2":
-        pyrogram_session = await pyrogram_session()
+        pyrogram_session_result = await pyrogram_session()
         with open("pyrogram_session.txt", "w") as file:
-            file.write(pyrogram_session)
+            file.write(pyrogram_session_result)
     elif choice == "3":
-        hydrogram_session = await hydrogram_session()
+        hydrogram_session_result = await hydrogram_session()
         with open("hydrogram_session.txt", "w") as file:
-            file.write(hydrogram_session)
+            file.write(hydrogram_session_result)
     else:
         print("🚫 Invalid choice. Please choose 1, 2, or 3.")
 
