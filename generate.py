@@ -5,8 +5,8 @@ from telethon.sync import TelegramClient
 from telethon.sessions import StringSession
 from hydrogram import Client as HydrogramClient 
 
-API_ID = 9276915  # PUT YOUR OWN API
-API_HASH = "e8145ec48504292485900892fffaf890"  # PUT YOUR API HASH
+API_ID = 29465055  # PUT YOUR OWN API
+API_HASH = "72d7aa07e4f70f0fbefd27347f2b2012"  # PUT YOUR API HASH
 
 async def telethon_session():
     api_id = API_ID
