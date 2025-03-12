@@ -35,22 +35,10 @@ async def pyrogram_session():
         print("Your Pyrogram string session was saved in your saved messages.")
         return session_string
 
-async def hydrogram_session():
-    api_id = API_ID
-    api_hash = API_HASH
-
-    async with HydrogramClient("bcn", api_id=api_id, api_hash=api_hash) as hydrogram:
-        print("Generating Hydrogram String Session...")
-        session_string = await hydrogram.export_session_string()
-        await hydrogram.send_message("me", f"**Your string session:**\n\n`{session_string}`")
-        print("Your Hydrogram string session was saved in your saved messages.")
-        return session_string
-
 async def bcn():
     print("Please Choose an Option:")
     print("1. Generate Telethon Session")
     print("2. Generate Pyrogram V2 Session")
-    print("3. Generate Hydrogram Session") 
     choice = input("Enter your choice (1/2/3): ")
 
     if choice == "1":
@@ -61,10 +49,6 @@ async def bcn():
         pyrogram_session_result = await pyrogram_session()
         with open("pyrogram_session.txt", "w") as file:
             file.write(pyrogram_session_result)
-    elif choice == "3":
-        hydrogram_session_result = await hydrogram_session()
-        with open("hydrogram_session.txt", "w") as file:
-            file.write(hydrogram_session_result)
     else:
         print("🚫 Invalid choice. Please choose 1, 2, or 3.")
 
